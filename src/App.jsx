@@ -1,8 +1,10 @@
 import React from "react";
 import "./app.css"
 
-export const App = () => {
+const App = () => {
     return (<>
         <h1>GOOGLE AUTHENTICATION</h1>
     </>)
 }
+
+export default App
