@@ -32,10 +32,43 @@
     object-fit: cover;
 }
 
+.home{
+    display: flex;
+    padding: 50px 100px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
+}
+
 .card{
     width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 23px -5px #000000; 
+    box-shadow: 0px 0px 23px -5px #000000;
 }
 
 .img{
     width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+    margin: 20px 0px;
+}
+
+.desc{
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+
+.cardButton{
+    border: none;
+    border-radius: 10px;
+    background-color: #05d690;
+    padding: 10px;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
 }
