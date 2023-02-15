@@ -4,11 +4,12 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import "./app.css"
 import Post from "./pages/Post";
+import Login from "./pages/Login";
 
 const App = () => {
     return (<>
         <Navbar />
-        <Post />
+        <Login />
         <h1>GOOGLE AUTHENTICATION</h1>
     </>)
 }
