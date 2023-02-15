@@ -1,17 +1,28 @@
-import React from "react";
+import React from "react"
 import "./app.css"
-import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
+import Navbar from "./components/Navbar"
+import Home from "./pages/Home"
 import "./app.css"
-import Post from "./pages/Post";
-import Login from "./pages/Login";
+import Post from "./pages/Post"
+import Login from "./pages/Login"
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
 
 const App = () => {
-    return (<>
-        <Navbar />
-        <Login />
-        <h1>GOOGLE AUTHENTICATION</h1>
-    </>)
+
+    const user = true
+
+    return (
+    <BrowserRouter>
+        <>
+            <Navbar />
+            <Routes>
+                <Route path="/" element={user ? <Home /> : <Navigate to="/login" /> } />
+                <Route path="/login" element={user ? <Navigate to="/" /> : <Login /> } />
+                <Route path="/post/:id" element={user ? <Post/> : <Navigate to="/login"/> } />
+            </Routes>
+        </>
+    </BrowserRouter>
+    )
 }
 
 export default App
