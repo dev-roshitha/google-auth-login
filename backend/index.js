@@ -1,4 +1,3 @@
-const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const cookieSession = require("cookie-session")
 const passport = require("passport")
 const express = require("express")
