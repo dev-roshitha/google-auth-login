@@ -7,11 +7,14 @@
 /backend/node_modules
 .vscode
 
+
 # testing
 /coverage
+/backend/passport.js
 
 # production
 /build
+
 
 # misc
 /vscode
