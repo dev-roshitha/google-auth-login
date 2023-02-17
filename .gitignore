@@ -5,12 +5,12 @@
 /.pnp
 .pnp.js
 /backend/node_modules
+/backend/passport.js
 .vscode
 
 
 # testing
 /coverage
-/backend/passport.js
 
 # production
 /build
