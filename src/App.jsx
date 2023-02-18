@@ -24,8 +24,10 @@ const App = () => {
             }).then(response => {
                 if(response.status === 200) return response.json()
                 throw new Error("authentication has been failed")
+
             }).then(resObject => {
                 setUser(resObject.user)
+                
             }).catch(err=>{
                 console.log(err)
             })

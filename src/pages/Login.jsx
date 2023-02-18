@@ -5,14 +5,17 @@ import Github from "../img/github.png"
 
 const Login = () => {
 
+    //Google
     const google = () => {
         window.open("http://localhost:5000/auth/google", "_self")
     }
 
+    //Github
     const github = () => {
         window.open("http://localhost:5000/auth/github", "_self")
     }
 
+    //Facebook
     const facebook = () => {
         window.open("http://localhost:5000/auth/facebook", "_self")
     }
