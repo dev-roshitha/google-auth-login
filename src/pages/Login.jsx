@@ -9,6 +9,14 @@ const Login = () => {
         window.open("http://localhost:5000/auth/google", "_self")
     }
 
+    const github = () => {
+        window.open("http://localhost:5000/auth/github", "_self")
+    }
+
+    const facebook = () => {
+        window.open("http://localhost:5000/auth/facebook", "_self")
+    }
+
     return (<>
         <div className="login">
             <h1 className="loginTitle">Choose a Login Method</h1>
@@ -17,10 +25,10 @@ const Login = () => {
                     <div className="loginButton google" onClick={google}>
                         <img src={Google} alt="logo" className="icon" />Google
                     </div>
-                    <div className="loginButton facebook">
-                        <img src={Facebook} alt="logo" className="icon" />Facebook
+                    <div className="loginButton facebook" >
+                        <img src={Facebook} alt="logo" className="icon" onClick={facebook}/>Facebook
                     </div>
-                    <div className="loginButton github">
+                    <div className="loginButton github" onClick={github}>
                         <img src={Github} alt="logo" className="icon" />Github
                     </div>
                 </div>
