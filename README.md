@@ -4,7 +4,7 @@
 
 
 
-<h1> This is Passport.js File <h1/>
+<h1> This is Passport.js File </h1>
 
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const GitHubStrategy = require("passport-github2").Strategy
