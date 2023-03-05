@@ -2,7 +2,13 @@
 
 <h3>Facebook authentication didn't work with this application. Because facebook didn't allow http requests. If you want to authenticate with facebook you have to buy and setup a domain first, then you can authenticate with facebook. Other authentication methods are working fine.</h3>
 
+<h4>
+    You have to create javascript file called "passort.js" using following code given and relocate that file using given location
+</h4>
 
+<h4>
+    /backend/passport.js
+</h4>
 
 <h1> This is Passport.js File </h1>
 
@@ -12,15 +18,15 @@ const FacebookStrategy = require("passport-facebook").Strategy
 const passport = require("passport")
 
 
-const GOOGLE_CLIENT_ID = "63310492014-f8rdqk9svv50litvkrd8dtajb3a9gm3q.apps.googleusercontent.com"
-const GOOGLE_CLIENT_SECRET = "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"
+const GOOGLE_CLIENT_ID = "YOUR GOOGLE CLIENT ID"
+const GOOGLE_CLIENT_SECRET = "YOUR GOOGLE CLIENT SECRET"
 
-const GITHUB_CLIENT_ID = "4e9e04a2a018fe34dd13"
-const GITHUB_CLIENT_SECRET = "3c1cb49ddb6ff140047b2bb81d600ad77e116a87"
+const GITHUB_CLIENT_ID = "YOUR GITHUB CLIENT ID"
+const GITHUB_CLIENT_SECRET = "YOUR GITHUB CLIENT SECRET"
 
 //Facebook authentication didn't work with HTTP requests
-const FACEBOOK_CLIENT_ID = ""
-const FACEBOOK_CLIENT_SECRET = ""
+const FACEBOOK_CLIENT_ID = "YOUR FACEBOOK CLIENT ID"
+const FACEBOOK_CLIENT_SECRET = "YOUR FACEBOOK CLIENT SECRET"
 
 
 //Google
